@@ -37,12 +37,18 @@ public class UserReturnee {
     @Column(name = "contact_information", nullable = false)
     private @Getter @Setter String contactInformation;
 
+    @Column(name = "item_name", nullable = false)
+    private @Getter @Setter String itemName;
+
+    @Column(name = "item_description", nullable = false)
+    private @Getter @Setter String itemDescription;
+
     @Column(name = "found_location", nullable = false)
     private @Getter @Setter String foundLocation;
 
     @Column(name = "report_date", nullable = false)
     private @Getter @Setter Date reportDate;
-    
+
     @Lob
     private @Getter @Setter byte[] image;
 }
