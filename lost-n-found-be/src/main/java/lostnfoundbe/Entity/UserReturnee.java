@@ -1,6 +1,9 @@
 package lostnfoundbe.Entity;
 
 import jakarta.persistence.Entity;
+
+import java.sql.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Table;
 import jakarta.persistence.Lob;
@@ -37,6 +40,9 @@ public class UserReturnee {
     @Column(name = "found_location", nullable = false)
     private @Getter @Setter String foundLocation;
 
+    @Column(name = "report_date", nullable = false)
+    private @Getter @Setter Date reportDate;
+    
     @Lob
     private @Getter @Setter byte[] image;
 }
